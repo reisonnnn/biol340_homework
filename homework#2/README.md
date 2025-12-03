@@ -13,8 +13,7 @@ Reference: Kairov, U., Amanzhanova, A., Karabayev, D., Rakhimova, S., Aitkulova,
 ```
 biol340/
 ├──homework#2
-    ├── .git/
-    ├── analysis.py
+    ├── analysis.py/
     ├── nextclade.csv
     ├── spike_mutations.csv
     ├── spike_mutations.png

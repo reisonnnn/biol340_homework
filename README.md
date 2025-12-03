@@ -3,12 +3,12 @@
 ## The structure 
 biol340/
 ├──homework#2
-    ├── analysis.py
+    ├── analysis.py/
     ├── nextclade.csv
     ├── spike_mutations.csv
     ├── spike_mutations.png
     ├── temporal_distribution.png
     └── variant_distribution_bar.png
 ├──homework#2
-    ├── 307_genes_for_CP.search_strict_match.vcf
+    ├── 307_genes_for_CP.search_strict_match.vcf/
     ├── vcf_homework.py
