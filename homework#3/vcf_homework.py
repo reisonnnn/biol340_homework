@@ -45,8 +45,9 @@ with open(vcf_file) as f:
         # question3
         ref = parts[ref_col]
         alt = parts[alt_col]
-        if len(ref) > 1 and len(alt) > 1 and len(ref) == len(alt):
-            mnv += 1
+        for alt_allele in alt.split(','):
+            if len(ref) > 1 and len(alt_allele) > 1 and len(ref) == len(alt_allele):
+                mnv += 1
         
         # question4
         has_homo = False
@@ -79,6 +80,7 @@ with open(vcf_file) as f:
             found_rs9697 = True
             print(f"\nFound rs9697 at position {parts[1]}")
             print(f"Full line: {line[:200]}...")
+            
 print(f"1. - Number of samples: {smplsnmbr}") 
 print(f"2a. - Variants with total depth >30: {depth_over_30}")
 print(f"2b. - number of depth >30 per sample: {depth_per_sample_over_30}")
